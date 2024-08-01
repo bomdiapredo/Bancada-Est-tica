@@ -46,7 +46,7 @@ void setup() {
   }
   Serial.println("initialization done.");
   if (myFile) {
-    myFile.println(LoadCell.update);
+    myFile.println(LoadCell.getCalFactor());
     // close the file:
     myFile.close();
     Serial.println("done.");
